@@ -15,8 +15,8 @@ body {
   justify-content: center;
 }
 .container {
-  padding: 0 5%;
-  max-width: 95%;
+  padding: 0 20%;
+  max-width: 80%;
   margin: 32px auto;
   display: flex;
   justify-content: space-between;
@@ -71,18 +71,16 @@ body {
 }
 
 .titresdeprojets {
-    color: #333; /* Couleur sombre pour contraster avec le fond */
-    font-family: 'Georgia', serif; /* Police élégante pour le titre */
-    font-size: 2.5rem;
+    color: #333;
+    font-family: 'Georgia', serif; 
+    font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 20px; /* Marge en bas */
+    margin-bottom: 30px;
     padding: 10px 20px;
-    background-color: rgba(255, 255, 255, 0.2); /* Fond légèrement transparent pour lisibilité */
-    border-radius: 8px; /* Coins arrondis */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Ombre subtile pour effet de profondeur */
+    border-radius: 8px; 
     z-index: 102;
     position: relative;
 }

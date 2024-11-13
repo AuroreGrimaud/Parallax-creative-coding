@@ -15,8 +15,8 @@ body {
   justify-content: center;
 }
 .container {
-  padding: 0px 40px;
-  max-width: 960px;
+  padding: 0 5%;
+  max-width: 95%;
   margin: 32px auto;
   display: flex;
   justify-content: space-between;

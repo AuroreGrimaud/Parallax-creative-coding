@@ -10,7 +10,7 @@
 
 <body>
   <div class="container">
-    <div class="atropos-banner">
+    <div class="atropos-banner" onclick="openModal()">
       <atropos-component>
         <img class="atropos-banner-spacer atropos-img" src="./i/landingpage.png">
         <img data-atropos-offset="-4.5" src="./i/landingpage.png" class="atropos-img">
@@ -31,9 +31,18 @@
           <centrerlestitres>
           <a href="https://aurore.famillegrimaud.fr/bookster/" data-atropos-offset="2" class="titresdeprojets">Au Bonheur Des Dames</a>
           </centrerlestitres>
-        
       </atropos-component>
     </div>
+
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Au Bonheur Des Dames</h2>
+            <p>Voici une explication du projet "Au Bonheur Des Dames". Ce projet vise à... (détail du projet ici).</p>
+        </div>
+    </div>
+
+    
     </div>
     <div class="container">
     <div class="atropos-banner">

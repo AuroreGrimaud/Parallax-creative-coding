@@ -15,8 +15,8 @@ body {
   justify-content: center;
 }
 .container {
-  padding: 0 15%;
-  max-width: 85%;
+  padding: 0 20%;
+  max-width: 80%;
   margin: 32px auto;
   display: flex;
   justify-content: space-between;
@@ -91,5 +91,6 @@ centrerlestitres {
     border-radius: 8px; 
     z-index: 102;
     position: relative;
+    background-color: rgba(255, 255, 255, 0.4);
 }
 

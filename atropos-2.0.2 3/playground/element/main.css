@@ -8,7 +8,7 @@ body {
   min-height: 100vh;
 }
 body {
-  background-image: linear-gradient(to bottom, #ad3ef5, #5814a2);
+  background-image: url("i/background.jpg");
   display: flex;
   flex-direction: column;
   align-items: center;

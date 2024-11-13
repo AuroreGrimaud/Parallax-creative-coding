@@ -1,3 +1,10 @@
+function showPopup() {
+  alert("La page est bien liée !");
+}
+
+// Appeler la fonction pour afficher la pop-up
+showPopup();
+
 // pour avoir acces aux descriptions
 function openModal() {
     document.getElementById("projectModal").style.display = "block";

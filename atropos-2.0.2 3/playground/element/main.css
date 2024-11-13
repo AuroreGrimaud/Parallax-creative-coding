@@ -69,6 +69,9 @@ body {
 }
 .atropos-active .atropos-banner-text {
 }
+centrerlestitres {
+   text-align: center;
+}
 
 .titresdeprojets {
     text-decoration: none; 

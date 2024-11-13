@@ -75,7 +75,7 @@ centrerlestitres {
     display: flex;
     justify-content: center;
 }
-a { 
+.titresdedescriptions { 
     display: inline-block;
     color: #86B9D3;
     font-family: 'Georgia', serif; 

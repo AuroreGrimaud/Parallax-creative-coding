@@ -70,7 +70,10 @@ body {
 .atropos-active .atropos-banner-text {
 }
 centrerlestitres {
-   text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; 
 }
 
 .titresdeprojets {

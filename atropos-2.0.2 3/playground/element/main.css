@@ -69,3 +69,8 @@ body {
 }
 .atropos-active .atropos-banner-text {
 }
+
+.titresdeprojets {
+    z-index: 102;
+    position: relative;
+}

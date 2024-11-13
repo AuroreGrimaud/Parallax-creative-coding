@@ -15,8 +15,8 @@ body {
   justify-content: center;
 }
 .container {
-  padding: 0 20%;
-  max-width: 80%;
+  padding: 0 15%;
+  max-width: 85%;
   margin: 32px auto;
   display: flex;
   justify-content: space-between;
@@ -73,7 +73,7 @@ body {
 .titresdeprojets {
     color: #333;
     font-family: 'Georgia', serif; 
-    font-size: 1.5rem;
+    font-size: 130%;
     font-weight: bold;
     letter-spacing: 1px;
     text-transform: uppercase;

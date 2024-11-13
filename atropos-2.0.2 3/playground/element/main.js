@@ -4,7 +4,7 @@ import AtroposComponent from '../../build/atropos-element.mjs';
 
 customElements.define('atropos-component', AtroposComponent);
 
-
+// pour avoir acces aux descriptions
 function openModal() {
     document.getElementById("projectModal").style.display = "block";
 }
@@ -21,3 +21,4 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+// fin pour avoir acces aux descriptions

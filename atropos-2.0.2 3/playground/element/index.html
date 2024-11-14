@@ -11,7 +11,7 @@
 
 <body>
   <div class="container">
-    <div class="atropos-banner" onclick="openModal()">
+    <div class="atropos-banner" onclick="openModal()" data-id="0">
       <atropos-component>
         <img class="atropos-banner-spacer atropos-img" src="./i/landingpage.png">
         <img data-atropos-offset="-4.5" src="./i/landingpage.png" class="atropos-img">
@@ -38,15 +38,16 @@
     <div id="projectModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
+            <a href="#" id="modalTitle" class="titresdedescriptions"></a>
             <a href="https://aurore.famillegrimaud.fr/bookster/" class="titresdedescriptions">Au Bonheur Des Dames</a>
-            <p>Pour mon projet sur 'Au Bonheur des Dames' d'Émile Zola, j'ai créé deux rendus distincts. Tout d'abord, un 'bookster' constitué d'affiches astucieuses présentant de manière condensée et visuelle l'ensemble du livre. Chaque affiche capture des éléments clés, offrant ainsi un aperçu attractif et informatif du contenu. En parallèle, j'ai développé un site web interactif, utilisant HTML, CSS et JavaScript, pour offrir une expérience unique de lecture du livre. Ce site, au design ludique et accessible, contient le texte intégral du livre et propose une navigation plaisante grâce à des fonctionnalités interactives et des éléments visuels bien pensés, offrant ainsi une expérience de lecture dynamique et immersive.</p>
+            <p id="modalDescription"></p>
         </div>
     </div>
 
     
     </div>
     <div class="container">
-    <div class="atropos-banner">
+    <div class="atropos-banner" onclick="openModal()" data-id="1">
       <atropos-component>
         <img class="atropos-banner-spacer atropos-img" src="./i/atropos-bg.svg">
         <img data-atropos-offset="-4.5" src="./i/atropos-bg.svg" class="atropos-img">

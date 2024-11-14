@@ -17,11 +17,10 @@ const projects = [
   }
 ];
 
-// Ajouter un écouteur d'événement sur toutes les images de projet
-document.querySelectorAll(".project-image").forEach(image => {
-  image.addEventListener("click", function() {
+document.querySelectorAll(".atropos-banner").forEach(div => {
+  div.addEventListener("click", function() {
     const projectId = this.getAttribute("data-id");
-    console.log("Image cliquée, ID du projet:", projectId);  // Affichage dans la console pour débugger
+    console.log("Div cliquée, ID du projet:", projectId);  // Affichage dans la console pour débugger
     openModal(projectId);  // Ouvre la modal avec les informations du projet
   });
 });

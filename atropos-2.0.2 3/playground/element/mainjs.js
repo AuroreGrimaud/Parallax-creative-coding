@@ -24,7 +24,7 @@ function openModal(projectId) {
 //changer la constante en nombre
 const projectIdNum = parseInt(projectId, 10);
 
-  if (isNaN(projectIdNum) || projectIdNum < 0 || projectIdNum >= projects.length) {
+  if (isNaN(projectIdNum)) {
     console.error("ID du projet invalide:", projectId);
     return;
   }

@@ -9,7 +9,7 @@ body {
 }
 body {
   background-image: url("i/background.jpg");
-  dbackground-attachment: fixed;
+  background-attachment: fixed;
   flex-direction: column;
   align-items: center;
   justify-content: center;

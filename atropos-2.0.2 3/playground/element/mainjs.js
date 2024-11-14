@@ -17,6 +17,18 @@ const projects = [
   }
 ];
 
+// Ajouter un écouteur d'événement sur toutes les images de projet
+document.querySelectorAll(".project-image").forEach(image => {
+  image.addEventListener("click", function() {
+    const projectId = this.getAttribute("data-id");
+    console.log("Image cliquée, ID du projet:", projectId);  // Affichage dans la console pour débugger
+    openModal(projectId);  // Ouvre la modal avec les informations du projet
+  });
+});
+
+
+
+
 // Fonction pour ouvrir la modal et afficher les bonnes informations
 function openModal(projectId) {
   console.log("Ouverture de la modal pour le projet avec ID:", projectId);
@@ -63,11 +75,3 @@ window.onclick = function(event) {
   }
 }
 
-// Ajouter un écouteur d'événement sur toutes les images de projet
-document.querySelectorAll(".project-image").forEach(image => {
-  image.addEventListener("click", function() {
-    const projectId = this.getAttribute("data-id");
-    console.log("Image cliquée, ID du projet:", projectId);  // Affichage dans la console pour débugger
-    openModal(projectId);  // Ouvre la modal avec les informations du projet
-  });
-});

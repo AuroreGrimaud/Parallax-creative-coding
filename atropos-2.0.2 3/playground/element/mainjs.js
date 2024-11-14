@@ -2,7 +2,7 @@
 const projects = [
   {
     title: "Au Bonheur Des Dames",
-    description: "Pour mon projet sur 'Au Bonheur des Dames' d'Émile Zola, j'ai créé deux rendus distincts. Tout d'abord, un 'bookster' constitué d'affiches astucieuses présentant de manière condensée et visuelle l'ensemble du livre. Chaque affiche capture des éléments clés, offrant ainsi un aperçu attractif et informatif du contenu. En parallèle, j'ai développé un site web interactif, utilisant HTML, CSS et JavaScript, pour offrir une expérience unique de lecture du livre. Ce site, au design ludique et accessible, contient le texte intégral du livre et propose une navigation plaisante grâce à des fonctionnalités interactives et des éléments visuels bien pensés, offrant ainsi une expérience de lecture dynamique et immersive.",
+    description: "Pour mon projet sur 'Au Bonheur des Dames' d'Émile Zola, j'ai créé deux rendus distincts. Tout d'abord, un 'bookster' constitué d'affiches astucieuses présentant de manière condensée et visuelle l'ensemble du livre. Chaque affiche capture des éléments clés, offrant ainsi un aperçu attractif et informatif du contenu. En parallèle, j'ai développé un site web interactif, utilisant HTML, CSS et JavaScript, pour offrir une expérience unique de lecture du livre.",
     link: "https://aurore.famillegrimaud.fr/bookster/"
   },
   {
@@ -23,13 +23,21 @@ function openModal(projectId) {
   const titleElement = document.getElementById("modalTitle");
   const descriptionElement = document.getElementById("modalDescription");
 
-  // Mettre à jour le titre, la description et le lien en fonction de l'ID du projet
-  titleElement.textContent = projects[projectId].title;
-  descriptionElement.textContent = projects[projectId].description;
-  titleElement.href = projects[projectId].link;  // Mettre à jour le lien de la modal
+  // Vérification que l'ID du projet existe bien dans le tableau
+  const project = projects[projectId];
+  console.log("Project data:", project);  // Affichage dans la console pour débugger
 
-  // Afficher la modal
-  modal.style.display = "block";
+  if (project) {
+    // Mettre à jour le contenu de la modal avec le projet sélectionné
+    titleElement.textContent = project.title;
+    titleElement.href = project.link;
+    descriptionElement.textContent = project.description;
+
+    // Afficher la modal
+    modal.style.display = "block";
+  } else {
+    console.error("Projet introuvable pour l'ID:", projectId);
+  }
 }
 
 // Fonction pour fermer la modal
@@ -45,11 +53,11 @@ window.onclick = function(event) {
   }
 }
 
-// Ajouter des écouteurs d'événements aux images pour ouvrir la modal avec les bonnes informations
-const projectImages = document.querySelectorAll(".project-image");
-projectImages.forEach(image => {
+// Ajouter un écouteur d'événement sur toutes les images de projet
+document.querySelectorAll(".project-image").forEach(image => {
   image.addEventListener("click", function() {
     const projectId = this.getAttribute("data-id");
-    openModal(projectId);
+    console.log("Image cliquée, ID du projet:", projectId);  // Affichage dans la console pour débugger
+    openModal(projectId);  // Ouvre la modal avec les informations du projet
   });
 });

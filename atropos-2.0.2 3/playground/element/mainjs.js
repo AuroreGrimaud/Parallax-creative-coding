@@ -19,16 +19,16 @@ const projects = [
 
 // Fonction pour ouvrir la modal et afficher les bonnes informations
 function openModal(projectId) {
+  console.log("Ouverture de la modal pour le projet avec ID:", projectId);
+
   const modal = document.getElementById("projectModal");
   const titleElement = document.getElementById("modalTitle");
   const descriptionElement = document.getElementById("modalDescription");
 
-  // Vérification que l'ID du projet existe bien dans le tableau
+  // Vérification si le projet existe dans le tableau
   const project = projects[projectId];
-  console.log("Project data:", project);  // Affichage dans la console pour débugger
-
   if (project) {
-    // Mettre à jour le contenu de la modal avec le projet sélectionné
+    // Si le projet existe, on met à jour les éléments
     titleElement.textContent = project.title;
     titleElement.href = project.link;
     descriptionElement.textContent = project.description;
@@ -36,9 +36,11 @@ function openModal(projectId) {
     // Afficher la modal
     modal.style.display = "block";
   } else {
+    // Si le projet n'existe pas, affiche un message d'erreur
     console.error("Projet introuvable pour l'ID:", projectId);
   }
 }
+
 
 // Fonction pour fermer la modal
 function closeModal() {

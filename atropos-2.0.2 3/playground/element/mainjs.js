@@ -29,9 +29,9 @@ function openModal(projectId) {
   const project = projects[projectId];
   if (project) {
     // Si le projet existe, on met à jour les éléments
-    titleElement.textContent = project.title;
-    titleElement.href = project.link;
-    descriptionElement.textContent = project.description;
+    titleElement.textContent = projects.title;
+    titleElement.href = projects.link;
+    descriptionElement.textContent = projects.description;
 
     // Afficher la modal
     modal.style.display = "block";

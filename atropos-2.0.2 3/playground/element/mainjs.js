@@ -24,7 +24,6 @@ document.querySelectorAll(".atropos-banner").forEach(div => {
 
     // Vérification et affichage pour debug
     if (projectId !== null) {
-      console.log("Div cliquée, ID du projet:", projectId); // Affiche l'ID du projet dans la console
       openModal(projectId); // Appelle la fonction openModal avec projectId comme paramètre
     } else {
       console.error("Aucun ID de projet trouvé sur cet élément"); // Message d'erreur si data-id est manquant
@@ -38,8 +37,6 @@ document.querySelectorAll(".atropos-banner").forEach(div => {
 
 // Fonction pour ouvrir la modal et afficher les bonnes informations
 function openModal(projectId) {
-  console.log("Ouverture de la modal pour le projet avec ID:", projectId);
-  console.log("Project ID est", projectId);
   
 //changer la constante en nombre
 const projectIdNum = parseInt(projectId, 10);

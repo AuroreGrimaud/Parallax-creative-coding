@@ -20,6 +20,7 @@ const projects = [
 // Fonction pour ouvrir la modal et afficher les bonnes informations
 function openModal(projectId) {
   console.log("Ouverture de la modal pour le projet avec ID:", projectId);
+  console.log("Project ID est", projectId);
   
 //changer la constante en nombre
 const projectIdNum = parseInt(projectId, 10);

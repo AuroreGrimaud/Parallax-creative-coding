@@ -17,13 +17,21 @@ const projects = [
   }
 ];
 
+// Ajouter un écouteur d'événement à chaque div avec la classe .atropos-banner
 document.querySelectorAll(".atropos-banner").forEach(div => {
   div.addEventListener("click", function() {
-    const projectId = this.getAttribute("data-id");
-    console.log("Div cliquée, ID du projet:", projectId);  // Affichage dans la console pour débugger
-    openModal(projectId);  // Ouvre la modal avec les informations du projet
+    const projectId = this.getAttribute("data-id"); // Récupère l'attribut data-id
+
+    // Vérification et affichage pour debug
+    if (projectId !== null) {
+      console.log("Div cliquée, ID du projet:", projectId); // Affiche l'ID du projet dans la console
+      openModal(projectId); // Appelle la fonction openModal avec projectId comme paramètre
+    } else {
+      console.error("Aucun ID de projet trouvé sur cet élément"); // Message d'erreur si data-id est manquant
+    }
   });
 });
+
 
 
 

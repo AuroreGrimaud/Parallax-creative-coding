@@ -54,7 +54,7 @@ body {
 .atropos-banner .atropos-shadow {
   filter: blur(50px);
   opacity: 0.2;
-  background: none;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .atropos-banner .atropos-highlight {

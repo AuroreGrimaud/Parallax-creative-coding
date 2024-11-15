@@ -51,6 +51,11 @@ body {
   top: 0;
   visibility: hidden;
 }
+.atropos-banner .atropos-shadow {
+  filter: blur(50px);
+  opacity: 0.2;
+  background: none;
+}
 
 .atropos-banner .atropos-highlight {
   z-index: 100;

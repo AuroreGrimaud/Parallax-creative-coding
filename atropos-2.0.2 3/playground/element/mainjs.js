@@ -6,9 +6,9 @@ const projects = [
     link: "https://aurore.famillegrimaud.fr/bookster/"
   },
   {
-    title: "Projet 2",
-    description: "Description du projet 2.",
-    link: "https://lienversleprojet2.com"
+    title: "Carte intéractive",
+    description: "Ma carte interactive conçue sur Figma est une représentation détaillée des différents bâtiments bénéficiant des services offerts par Enfin Lundi, une entreprise de conciergerie d'entreprise renommée. Chaque point marquant un bâtiment affiche son adresse précise, offrant ainsi une accessibilité optimale aux utilisateurs. En outre, cette carte interactive offre une vue exhaustive des services spécifiques fournis à chaque emplacement, reflétant fidèlement la diversité des offres proposées par Enfin Lundi. Grâce à cette carte, les utilisateurs peuvent facilement localiser les services offerts par l'entreprise, renforçant ainsi l'accessibilité et la visibilité de ces services au sein des différents bâtiments.",
+    link: "https://xd.adobe.com/view/23dc9c86-f044-4302-bf05-8e7ffb06c6e3-768f/?fullscreen"
   },
   {
     title: "Projet 3",

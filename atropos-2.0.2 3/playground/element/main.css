@@ -108,6 +108,14 @@ centrerlestitres {
   background-color: #FD6863;
 }
 
+#ProjetPassword {
+  background-color: #113C9A;
+}
+#FondPassword {
+  width: 90%; 
+  margin-left: 5%;
+  
+}
 .project-image {
     cursor: pointer;
     transition: transform 0.2s;

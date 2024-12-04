@@ -109,11 +109,11 @@ centrerlestitres {
 }
 
 #ProjetPassword {
-  background-color: #113C9A;
+  background-color: #00F6FC;
 }
 #FondPassword {
   width: 90%; 
-  margin-left: 5%;
+  margin: 5%;
   
 }
 .project-image {

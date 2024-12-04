@@ -114,6 +114,7 @@ centrerlestitres {
 #FondPassword {
   width: 90%; 
   margin-left: 5%;
+  display: flex;
   
 }
 .project-image {

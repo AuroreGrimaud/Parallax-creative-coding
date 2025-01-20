@@ -12,7 +12,7 @@ const projects = [
   },
   {
     title: "Passwords",
-    description: "Le projet visant à rendre dynamique sur téléphone le site "The Secret Life of Passwords" du New York Times a été une aventure passionnante. Face à la tâche ardue de transformer un site initialement long et ennuyeux, j'ai entrepris de le revitaliser en intégrant des éléments interactifs captivants.J'ai cherché à créer une expérience plus engageante pour les utilisateurs. Ce travail m'a permis de repenser la manière dont l'information était présentée, transformant une expérience monotone en un parcours interactif à travers le monde complexe des mots de passe. Ce projet a été une occasion stimulante de démontrer ma créativité tout en maintenant la crédibilité et la rigueur journalistique associées au New York Times.",
+    description: "Le projet visant à rendre dynamique sur téléphone le site 'The Secret Life of Passwords' du New York Times a été une aventure passionnante. Face à la tâche ardue de transformer un site initialement long et ennuyeux, j'ai entrepris de le revitaliser en intégrant des éléments interactifs captivants.J'ai cherché à créer une expérience plus engageante pour les utilisateurs. Ce travail m'a permis de repenser la manière dont l'information était présentée, transformant une expérience monotone en un parcours interactif à travers le monde complexe des mots de passe. Ce projet a été une occasion stimulante de démontrer ma créativité tout en maintenant la crédibilité et la rigueur journalistique associées au New York Times.",
     link: "https://lienversleprojet3.com"
   }
 ];

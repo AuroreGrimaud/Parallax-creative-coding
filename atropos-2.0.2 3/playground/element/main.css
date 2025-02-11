@@ -42,6 +42,7 @@ body {
   z-index: 1;
   transform-style: preserve-3d;
   pointer-events: none;
+  border-radius: 15px;
 }
 .atropos-banner img.atropos-banner-spacer {
   position: relative;
